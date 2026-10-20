@@ -9,3 +9,7 @@ wheels/
 # Virtual environments
 .venv
 .env
+
+uv.lock
+test.db
+test_backup_20261015_185700.db
