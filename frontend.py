@@ -1,12 +1,4 @@
-"""
-Streamlit frontend for the FastAPI image/video sharing app.
 
-Run:
-    pip install streamlit requests
-    streamlit run streamlit_app.py
-
-Start FastAPI separately. Default API URL: http://127.0.0.1:8000
-"""
 import os
 from datetime import datetime
 
@@ -20,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-DEFAULT_API_URL = os.getenv("API_BASE_URL", "http://127.0.0.1:8000").rstrip("/")
+DEFAULT_API_URL = os.getenv("API_BASE_URL", "https://snapshare-4.onrender.com").rstrip("/")
 
 st.markdown(
     """
